@@ -93,7 +93,15 @@ class TicTacToe
   end
 end
 false
-end 
+end
+end
+
+  def full?
+    @board.all? { |i| i =="X" || i == "O"}
+  end
+
+  def draw?
+  !won? && full? ? true : false
   end
 
 end #end of class object
