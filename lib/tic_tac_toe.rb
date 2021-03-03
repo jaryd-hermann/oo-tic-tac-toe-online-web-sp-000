@@ -125,12 +125,12 @@ end
 end
 
 def play
-  turn until over? 
+  turn until over?
 
   if won? puts "Congratulations #{winner}!"
   elsif draw? puts "Cats Game!"
   end 
 
-end 
+end
 
 end #end of class object
